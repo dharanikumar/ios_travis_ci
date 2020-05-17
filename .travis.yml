@@ -9,4 +9,4 @@ jobs:
       script: xcodebuild -workspace SampleApp.xcworkspace -scheme SampleApp -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO
     - stage: test
       name: "Test"
-      script: xcodebuild test-without-building -workspace SampleApp.xcworkspace -scheme SampleAppTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 11 Pro' ONLY_ACTIVE_ARCH=NO
+      script: xcodebuild test -workspace SampleApp.xcworkspace -scheme SampleAppTests -sdk iphonesimulator ONLY_ACTIVE_ARCH=NO -destination 'platform=iOS Simulator,OS=13.4.1,name=iPhone 11 Pro' ONLY_ACTIVE_ARCH=NO
