@@ -1,0 +1,4 @@
+language: objective-c
+osx_image: xcode11.4
+xcode_project: SampleApp.xcodeproj # path to your xcodeproj folder
+xcode_scheme: SampleApp
